@@ -27,12 +27,12 @@ def resultado():
     entrada = request.form["mes"].strip().lower()
     for mes, variantes in meses.items():
         if entrada in variantes:
-            mensaje = f"Naciste en {mes.upper()}... qué sorpresa 😏"
+            mensaje = f"WOW!! Naciste en {mes.upper()}... que sorpresa! fue realmente dificil adivinar"
             if mes == "noviembre":
-                mensaje += " ¡POBRE CRIATURA!"
+                mensaje += " ¡POBRE CRIATURA! espero no seas escorpio"
             break
     else:
-        mensaje = "¿Ese mes existe? ¿Vienes de otro plano?"
+        mensaje = "No logro entender tu escritura ¿Vienes de otro plano temporal?"
 
     return render_template("resultado.html", mensaje=mensaje)
 
