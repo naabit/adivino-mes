@@ -5,43 +5,27 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>¿Adivino tu mes?</title>
 </head>
-<body class="bg-gray-100 font-sans text-gray-900 min-h-screen flex flex-col items-center p-6">
+<body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex flex-col items-center p-6">
 
   <h1 class="text-4xl font-bold mb-6">¿Adivino tu mes?</h1>
 
-  <form method="POST" action="/resultado" class="mb-12 w-full max-w-md bg-white p-6 rounded-lg shadow-md flex flex-col gap-4">
+  <form method="POST" action="/resultado" class="mb-12 w-full max-w-md bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col gap-4">
     <label for="mes" class="text-lg font-medium">Ingresa tu mes de nacimiento:</label>
-    <input type="text" name="mes" required class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-    <button type="submit" class="bg-blue-600 text-white rounded py-2 hover:bg-blue-700 transition">Revelar</button>
+    <input
+      type="text"
+      name="mes"
+      required
+      class="bg-gray-700 border border-gray-600 rounded px-3 py-2 text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      placeholder="Ejemplo: enero"
+    />
+    <button
+      type="submit"
+      class="bg-blue-600 hover:bg-blue-700 transition rounded py-2 text-white font-semibold"
+    >
+      Revelar
+    </button>
   </form>
 
-  <div class="bg-white flex flex-col justify-center items-stretch w-full max-w-7xl px-6 py-8 rounded-lg shadow-md">
-    <div class="bg-neutral-50 flex w-full flex-col items-stretch pl-9 pr-4 pt-4 pb-12 max-md:max-w-full max-md:pl-5 rounded-lg">
-      <div class="flex w-full items-center justify-between gap-5 max-md:max-w-full max-md:flex-wrap">
-        <div class="self-center w-full max-w-[1266px] mt-20 mb-12 max-md:max-w-full max-md:my-10">
-          <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-            <div class="flex flex-col items-stretch w-[52%] max-md:w-full max-md:ml-0">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/1e312f45976c5c01d21df2b3f4370986e0c9f39a0beae4a86874a1d2500e07d8?"
-                class="aspect-[0.96] object-contain object-center w-full overflow-hidden my-auto max-md:max-w-full max-md:mt-10 rounded"
-                alt="Imagen 1"
-              />
-            </div>
-            <div class="flex flex-col items-stretch w-[48%] ml-5 max-md:w-full max-md:ml-0">
-              <img
-                loading="lazy"
-                srcSet="..."
-                class="aspect-[0.86] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 rounded"
-                alt="Imagen 2"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 </body>
 </html>
-
